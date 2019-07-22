@@ -1,0 +1,30 @@
+include ../default-tetx-filed/default-text-field
+include ../radio-buttons/radio-buttons
+include ../masked-text-field/masked-text-field
+include ../button-border/button-border
+include ../button-arrow/button-arrow
+include ../toggle/toggle
+
+
+mixin reg-acc()
+
+  .reg-acc__box
+    .reg-acc__header Регистрация аккаунта
+    +default-text-field("Имя")
+    +default-text-field("Фамилия")
+    +radio-buttons()
+    h3 дата рождения
+    +masked-text-field()
+    h3 данные для входа в сервис
+    +default-text-field("Email")
+    +default-text-field("Пароль")
+    +toggle()
+    br
+    +button-arrow("перейти к оплате")
+    br
+
+    .reg-acc__login
+      span Уже есть аккаунт на Toxin
+      +button-border("ВОЙТИ")
+
+

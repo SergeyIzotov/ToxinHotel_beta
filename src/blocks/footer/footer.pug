@@ -1,0 +1,58 @@
+include ../logo/logo
+include ../subscription-text-field/subscription-text-field
+
+
+mixin footer()
+
+    .footer
+        .footer-widgets
+            .footer-widgets__col-1
+                a(href="#")
+                    +logo()
+                span Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            .footer-widgets__col-2
+                .footer-widgets__col-2-1
+                    h3 Навигация
+                    ul
+                        li
+                            a(href="#") О нас
+                        li
+                            a(href="#") Новости
+                        li
+                            a(href="#") Служба поддержки
+                        li
+                            a(href="#") Услуги
+                .footer-widgets__col-2-2
+                    h3 О НАС
+                    ul
+                        li
+                            a(href="#") О сервисе
+                        li
+                            a(href="#") Наша команда
+                        li
+                            a(href="#") Вакансии
+                        li
+                            a(href="#") Инвесторы
+                .footer-widgets__col-2-3
+                    h3 СЛУЖБА ПОДДЕРЖКИ
+                    ul
+                        li
+                            a(href="#") Соглашения
+                        li
+                            a(href="#") Сообщества
+                        li
+                            a(href="#") Связь с нами
+            .footer-widgets__col-3
+                h3 ПОДПИСКА
+                span Получайте специальные предложения и новости сервиса
+                +subscription-text-field("yea", "Your email address")
+
+        .footer-copyright-bar
+            span Copyright © 2018 Toxin отель. Все права защищены.
+            .copyright-bar__icons
+                a(href="https://twitter.com/")
+                    img(src="./img/twitter.svg")
+                a(href="https://www.facebook.com/")
+                    img(src="./img/facebook.svg")
+                a(href="https://www.instagram.com")
+                    img(src="./img/instagram.svg")

@@ -1,0 +1,39 @@
+.datepicker-box {
+  display: flex;
+  justify-content: space-between;
+  //background-color: lightcoral;
+  width: 320px;
+  height: 65px;
+  margin-bottom: 1px;
+}
+
+.datepicker-box__arrival {
+  height: 65px;
+  width: 150px;
+}
+
+.datepicker-box__departure {
+  height: 65px;
+  width: 150px;
+}
+
+.dataDropdown {
+  input {
+    width: 150px;
+    height: 44px;
+    border: 1px solid @DarkShade25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 0 3px 14px;
+    font: @text;
+    color: @DarkShade75;
+    background: url(../img/arrowDown.svg)  no-repeat 121px 18px;
+    &:focus {
+      outline: none;
+      border: 1px solid @DarkShade50;
+    }
+    &:hover {
+      border: 1px solid @DarkShade50;
+    }
+  }
+}

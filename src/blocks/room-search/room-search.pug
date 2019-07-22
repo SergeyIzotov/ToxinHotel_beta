@@ -1,0 +1,15 @@
+include ../datepicker/datepicker
+include ../dropdown-guest/dropdown-guest
+include ../button-arrow/button-arrow
+
+mixin room-search()
+
+  .room-search__box
+    .room-search__header Найдем номера под ваши пожелания
+    +datepicker()
+    br
+    +dropdown-guest("Гости", "room-search", "dsa")
+    br
+    +button-arrow("Подобрать номер", "filterPage.html")
+
+

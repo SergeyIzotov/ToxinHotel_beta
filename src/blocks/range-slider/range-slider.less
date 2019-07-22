@@ -1,0 +1,124 @@
+.slider {
+  width: 266px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  form {
+    width: 281px;
+  }
+  .formCost {
+    width: 266px;
+    float: left;
+    height: 15px;
+    margin-bottom: 23px;
+    color: @DarkShade100;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .RUB {
+      font: @text;
+      color: @DarkShade50;
+    }
+    .label1 {
+      font: @h3;
+      margin-right: 27px;
+    }
+    .label2 {
+      color: @DarkShade50;
+      font: @text;
+    }
+    input {
+      text-align: right;
+      color: @DarkShade50;
+      font: @text;
+      width: 40px;
+      max-width: 40px;
+      height: 15px;
+      outline: none;
+      border: none;
+    }
+  }
+  .sliderCont {
+    width: 178px;
+    height: 27px;
+    float: left;
+  }
+}
+
+/* Ширина слайдера  */
+#slider {
+  width: 266px;
+}
+
+/* Контейнер слайдера */
+.ui-slider {
+  position: relative;
+}
+
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 16px;
+  height: 14px;
+  border-radius: 12px;
+  outline: none;
+  //background: url(../../../img/slider.png) no-repeat;
+  background-color: #fff;
+  background-position: 0px -1px;
+  vertical-align: center;
+  cursor: pointer !important;
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .8em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+  height: 4px;
+}
+
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle {
+  top: -5px;
+  margin-left: -6px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content {
+  border: 1px solid @DarkShade25;
+  background: #fff;
+}
+
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header {
+  outline: 1px solid @Green2 !important;
+  background: linear-gradient(180deg, @Green 0%, @Green2 100%);
+}
+
+/* скругление для полосы слайдера */
+.ui-corner-all {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}

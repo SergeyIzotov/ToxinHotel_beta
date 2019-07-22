@@ -1,0 +1,27 @@
+include blocks/header/nav-bar
+include blocks/landing-body/landing-body
+include blocks/footer/footer
+include blocks/room-search/room-search
+
+
+doctype html
+html(lang='ru')
+    head
+        title Toxin Hotel 2
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        link(rel='stylesheet', href='css/styles.css')
+        script(type="text/javascript" src="js/datepicker.min.js")
+        script(type="text/javascript" src="js/jquery-1.12.4.min.js")
+
+
+
+    body
+        +nav-bar()
+        +landing-body()
+        +footer()
+
+        script(type="text/javascript" src="js/datepicker-set.js")
+        script(type="text/javascript" src="js/numbercategoryselectorGuest.js")
+        script(type="text/javascript" src="js/guest.js")

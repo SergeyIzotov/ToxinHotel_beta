@@ -1,0 +1,35 @@
+.button-border__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99px;
+  height: 44px;
+  background: @PurpleGradient;
+  border-radius: 22px;
+  &:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+  }
+}
+
+.button-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 95px;
+  height: 40px;
+  outline: none;
+  text-decoration: none;
+  color: @Purple;
+  font: @h3;
+  line-height: 15px;
+  &:visited {
+    color: @Purple;
+  }
+  &:hover  {
+    //opacity: 0.5;
+    color: @Purple !important;
+  }
+}
+

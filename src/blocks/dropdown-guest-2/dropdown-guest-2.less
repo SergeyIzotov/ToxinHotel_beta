@@ -1,0 +1,133 @@
+.dropdown-guest-2 {
+  width: 266px;
+  height: 65px;
+  font: @h3;
+
+  input {
+    height: 44px;
+    width: 266px;
+    border: 1px solid @DarkShade25;
+    box-sizing: border-box;
+    border-radius: 4px 4px 0px 0px;
+    padding-left: 13px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    font: @text;
+    background: white url(../img/arrowDown.svg) 237px 18px no-repeat; // стрелочка вниз
+    text-overflow: ellipsis;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    &:hover, &:focus {
+      border: 1px solid @DarkShade50;
+    }
+  }
+}
+
+// Выпадающее меню
+div.guest2.parent {
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  border: 1px solid @DarkShade50;
+  border-radius: 0 0 4px 4px;
+  box-sizing: border-box;
+  padding: 5px 7px 15px 15px;
+  text-align: center;
+  overflow: hidden;
+  width: 266px;
+  margin-top: 4px;
+}
+
+// категории
+div.guest2.category {
+  // padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font: @h3; //шрифт цифр
+}
+
+div.guest2.room {
+  height: 5px;
+}
+
+div.guest2.display {
+  overflow: hidden;
+  background: transparent;
+  z-index: 999;
+  position: absolute;
+  border-radius: 0.125rem;
+  padding: 0.3125rem 0.1563rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+
+div.guest2.text {
+  clear: both;
+  display: inline-block;
+  padding-top: 7px;
+  margin-bottom: 15px;
+}
+
+div.guest2.name, a.guest.close, div.guest.value {
+  font: @h3;
+  color: @DarkShade100;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+div.guest2.buttons {
+  display: flex;
+  width: 5.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.guest2.button {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid @DarkShade25;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font: @text;
+  font-size: 18px;
+  line-height: 29px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0);
+}
+
+a.guest2.button.plus {
+  background: url(../img/plus.svg) no-repeat 10px 10px;
+}
+
+a.guest2.button.minus {
+  background: url(../img/minus.svg) no-repeat 11px 13px;
+}
+
+a.guest2.button.inactive {
+  opacity: 0.38;
+}
+
+.NCSG.reset {
+  float: left;
+  padding: 14px 0 0 2px;
+  font: @h3;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @DarkShade50;
+}
+
+.NCSG.close {
+  float: right;
+  padding: 14px 0 0 2px;
+  font: @h3;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @Purple;
+}

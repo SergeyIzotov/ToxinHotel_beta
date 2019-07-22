@@ -1,0 +1,8 @@
+.checkbox-buttons__container {
+  width: 250px;
+  display: flex;
+}
+.checkbox-buttons__container .checkbox-buttons__list input[type=checkbox] {
+  display: none;
+}
+/*# sourceMappingURL=checkbox-buttons.css.map */

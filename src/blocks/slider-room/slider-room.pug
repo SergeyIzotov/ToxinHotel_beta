@@ -1,0 +1,32 @@
+include ../rate-button/rate-button
+
+mixin slider-room(roomNum, cost, numberComments, lux)
+
+    .slider-room
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    img(src='./img/'+roomNum+'/slide-1.jpg')
+                .swiper-slide
+                    img(src='./img/'+roomNum+'/slide-2.jpg')
+                .swiper-slide
+                    img(src='./img/'+roomNum+'/slide-3.jpg')
+                .swiper-slide
+                    img(src='./img/'+roomNum+'/slide-4.jpg')
+            .swiper-pagination
+            .swiper-button-next
+            .swiper-button-prev
+
+        a(href="roomDetailsPage.html").slider-room-cost
+            .slider-room-cost_num
+                div № 
+                h3=roomNum
+                .slider-room-cost__lux=lux
+            .slider-room-cost__cost=cost +"₽"
+                span  в сутки
+
+        .slider-room-rate
+            +rate-button(roomNum)
+            div
+                .room-rate__nc=numberComments
+                span  Отзывов

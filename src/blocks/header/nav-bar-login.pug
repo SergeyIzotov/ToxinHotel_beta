@@ -1,0 +1,32 @@
+include ../logo/logo
+include ../button-border/button-border
+include ../button-solid/button-solid
+
+mixin nav-bar-login()
+
+  .nav-bar__box
+    .nav-bar
+      .nav-bar__col1
+        a(href='#')
+          +logo("index.html")
+      .nav-bar__col2
+        ul.nav-bar__menu
+          li
+            a(href='#') Home
+          li
+            a(href='#') About us
+          li
+            a(href='#') Services
+            div
+              i.material-icons expand_more
+          li
+            a(href='#') Careers
+          li
+            a(href='#') News
+          li
+            a(href='#') Documentation
+
+      .nav-bar__col3
+        .nav-bar__login
+          .stick
+          span Cosmin Negoita

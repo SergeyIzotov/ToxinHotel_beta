@@ -1,0 +1,69 @@
+.checkbox-list__container {
+  width: 266px;
+  ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0px;
+    display: none;
+  }
+  li {
+    font: @text;
+    color: @DarkShade50;
+    display: flex;
+    margin-bottom: 10px;
+
+    input[type=checkbox] {
+      display: none;
+    }
+    input[type=checkbox]:checked + label:before {
+      content: url(../img/vector.svg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      border: 1px solid @Purple;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    label:before {
+      margin-right: 10px;
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      border: 1px solid @DarkShade25;
+      border-radius: 4px;
+    }
+    label:hover:before {
+      border: 1px solid @DarkShade50;
+    }
+  }
+}
+
+.checkbox-list__title {
+  display: flex;
+  width: 250px;
+  margin-right: 30px;
+  height: 15px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  font: @h3;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.checkbox-list__container .checkbox-list__title::after {
+  content: url(../img/expand_more.svg);
+}
+
+.checkbox-list__container.open .checkbox-list__title::after {
+  content: url(../img/expand_less.svg);
+}
+
+.checkbox-list__container.open ul {
+  display: block;
+}

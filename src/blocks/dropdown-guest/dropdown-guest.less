@@ -1,0 +1,139 @@
+.dropdown-guest {
+  width: 320px;
+
+  input {
+    height: 44px;
+    width: 320px;
+    border: 1px solid @DarkShade25;
+    box-sizing: border-box;
+    border-radius: 4px 4px 0px 0px;
+    padding-left: 13px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    //margin: 0 0 1.4375rem 0; //Костыль. Убрать, если выпадающее меню ниже, чем надо (виноват img logo)
+    color: rgba(31, 32, 65, 0.75);
+    font: @text;
+    font-size: 14px;
+    background: white url(../img/arrowDown.svg) 291px 18px no-repeat; // стрелочка вниз
+    text-overflow: ellipsis;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    &:hover, &:focus {
+      border: 1px solid @DarkShade50;
+    }
+  }
+  label {
+    font: @h3;
+    color: @DarkShade100;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+}
+
+// Выпадающее меню
+div.guest.parent {
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  border: 1px solid @DarkShade50;
+  border-radius: 0 0 4px 4px;
+  box-sizing: border-box;
+  padding: 5px 7px 15px 15px;
+  text-align: center;
+  overflow: hidden;
+  min-width: 20rem;
+}
+
+// категории
+div.guest.category {
+  // padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font: @h3; //шрифт цифр
+}
+
+div.guest.room {
+  height: 5px;
+}
+
+div.guest.display {
+  overflow: hidden;
+  background: transparent;
+  z-index: 999;
+  position: absolute;
+  border-radius: 0.125rem;
+  padding: 0.3125rem 0.1563rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+div.guest.text {
+  clear: both;
+  display: inline-block;
+  padding-top: 7px;
+  margin-bottom: 15px;
+}
+
+div.guest.name, a.guest.close, div.guest.value {
+  font: @h3;
+  color: @DarkShade100;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+div.guest.buttons {
+  display: flex;
+  width: 5.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.guest.button {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid @DarkShade25;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font: @text;
+  font-size: 18px;
+  line-height: 29px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0);
+}
+
+a.guest.button.plus {
+  background: url(../img/plus.svg) no-repeat 10px 10px;
+}
+
+a.guest.button.minus {
+  background: url(../img/minus.svg) no-repeat 11px 13px;
+}
+
+a.guest.button.inactive {
+  opacity: 0.38;
+}
+
+.NCSG.reset {
+  float: left;
+  padding: 14px 0 0 2px;
+  font: @h3;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @DarkShade50;
+}
+
+.NCSG.close {
+  float: right;
+  padding: 14px 0 0 2px;
+  font: @h3;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @Purple;
+}
+
+

@@ -1,0 +1,8 @@
+include like
+
+mixin like-button(title)
+
+  div.like-button__container
+    div.like-button__title= title
+    +like('like1')
+    +like('like2', 'checked')

@@ -1,0 +1,50 @@
+.subscription-text-field {
+  display: flex;
+  background: #fff;
+
+  input[type="email"] {
+    border: 1px solid @DarkShade25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 260px;
+    height: 44px;
+    padding-left: 15px;
+    padding-right: 40px;
+    &::placeholder {
+      color: @DarkShade25;
+    }
+    &:hover {
+      border: 1px solid @DarkShade50;
+    }
+    &:focus {
+      border: 1px solid @DarkShade50;
+      outline: none;
+    }
+  }
+  input[type="submit"] {
+    background: none;
+    border: none;
+    width: 44px;
+    height: 44px;
+    font-family: Material Icons;
+    color: @Purple;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    right: 44px;
+    &:hover {
+      color: @Purple2;
+      transition: color 0.5s ease;
+    }
+  }
+  input[type="email"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+  input[type="email"]::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+  input[type="email"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+  input[type="email"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+  input[type="email"]:focus::-webkit-input-placeholder {opacity: 0.5; transition: opacity 0.3s ease;}
+  input[type="email"]:focus::-moz-placeholder          {opacity: 0.5; transition: opacity 0.3s ease;}
+  input[type="email"]:focus:-moz-placeholder           {opacity: 0.5; transition: opacity 0.3s ease;}
+  input[type="email"]:focus:-ms-input-placeholder      {opacity: 0.5; transition: opacity 0.3s ease;}
+}

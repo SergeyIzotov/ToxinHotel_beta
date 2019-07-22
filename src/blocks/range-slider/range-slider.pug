@@ -1,0 +1,13 @@
+mixin range-slider(text)
+
+  .slider
+    form(action="#" method="post")
+      .formCost
+        label(for="minCost" class="label1") ДИАПАЗОН ЦЕНЫ
+        input(type="text" id="minCost" value="0")
+        .RUB ₽
+        label(for="maxCost" class="label2")   - 
+        input(type="text" id="maxCost" value="10000" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px'")
+        .RUB ₽
+      .sliderCont
+        div(id="slider")

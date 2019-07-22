@@ -1,0 +1,13 @@
+.note {
+  max-width: 403px;
+}
+.note__rules {
+  outline: 1px solid blue;
+  max-width: 292px;
+  margin-right: 70px;
+}
+.note__cancel {
+  outline: 1px solid green;
+  max-width: 341px;
+}
+/*# sourceMappingURL=note.css.map */

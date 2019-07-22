@@ -1,0 +1,157 @@
+.rangeSlider{
+  width: 266px;
+  label{
+    font: @h3;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: @DarkShade100;
+  }
+}
+#amount{
+  background: white;
+  border: 0;
+  font: @text;
+  font-size: 12px;
+  text-align: right;
+  text-transform: uppercase;
+  color: @DarkShade50;
+  margin: 0 0 22px 0;
+  width: 140px;
+}
+
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 12px;
+  height: 12px;
+  -ms-touch-action: none;
+  touch-action: none;
+  outline: none;
+  cursor: pointer;
+
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: 11px;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+  filter: inherit;
+}
+
+.ui-slider-horizontal {
+  height: 6px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -6px;
+  margin-left: -10px;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+.ui-slider-vertical {
+  width: 16px;
+  height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+  left: -5px;
+  margin-left: 0;
+  margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 100%;
+}
+
+
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.ui-widget.ui-widget-content {
+  border: 1px solid @DarkShade25;
+  box-sizing: border-box;
+  border-radius: 0.1875rem;
+  width: 266px;
+}
+.ui-widget-content {
+  border: 1px solid #dddddd;
+  background: white;
+  color: @DarkShade100;
+}
+.ui-widget-content a {
+  color: @DarkShade100;
+}
+.ui-widget-header {
+  border: 1px solid @DarkShade25;
+  background: @Gradient;
+  color: @DarkShade100;
+  font-weight: bold;
+}
+.ui-widget-header a {
+  color: @DarkShade100;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+
+  /* We use html here because we need a greater specificity to make sure disabled
+  works properly when clicked or hovered */
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: 2px solid white;
+  background: @Gradient;
+  font-weight: normal;
+  color: @DarkShade100;
+  border-radius: 0.625rem;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
+  color: @DarkShade100;
+  text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+  border: 2px solid white;
+  background: @Gradient;
+  font-weight: normal;
+  color: @DarkShade100;
+}

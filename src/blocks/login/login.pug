@@ -1,0 +1,16 @@
+include ../default-tetx-filed/default-text-field
+include ../button-border/button-border
+include ../button-arrow/button-arrow
+
+mixin login()
+
+  .login__box
+    .login__box_header Войти
+    +default-text-field("Email")
+    +default-text-field("Пароль")
+    .login__space1
+    +button-arrow("ВОЙТИ")
+    br
+    .login__greate
+      span Нет аккаунта на Toxin?
+      +button-border("СОЗДАТЬ")

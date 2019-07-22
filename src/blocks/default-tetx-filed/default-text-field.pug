@@ -1,0 +1,7 @@
+mixin default-text-field(text, firstTitle, secondTitle)
+
+  .default-text-field
+    .default-text-field__header
+      .default-text-field__first-title= firstTitle
+      .default-text-field__second-title= secondTitle
+    input(name=text id=text class="default-text-field__input" placeholder=text)

@@ -1,0 +1,30 @@
+include ../datepicker/datepicker
+include ../dropdown-guest/dropdown-guest
+include ../button-arrow/button-arrow
+
+mixin payment()
+
+  .payment-box
+    .payment__header
+      .payment__header_number № 888
+      .payment__header_type люкс
+      .payment__header_cost 9 990&#x20bd в сутки
+    +datepicker()
+    br
+    +dropdown-guest("Гости", "payment", "aasd")
+    .payment_space1
+    .payment__text
+      .payment__text_service 9 990&#x20bd х 4 суток
+      .payment__text_cost 39 960&#x20bd
+    .payment__text
+      .payment__text_service Сбор за услуги: скидка 2 179&#x20bd
+      .payment__text_i
+      .payment__text_cost 0&#x20bd
+    .payment__text
+      .payment__text_service Сбор за дополнительные услуги
+      .payment__text_i
+      .payment__text_cost 300&#x20bd
+    .payment__text
+      .payment__text_total Итого
+      .payment__text_total-cost 39 960&#x20bd
+    +button-arrow("забронировать")

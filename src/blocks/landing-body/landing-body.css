@@ -1,0 +1,6 @@
+.landing-body {
+  display: flex;
+  outline: 2px solid black;
+  background: url("../../img/bg_landing.png") no-repeat;
+}
+/*# sourceMappingURL=landing-body.css.map */

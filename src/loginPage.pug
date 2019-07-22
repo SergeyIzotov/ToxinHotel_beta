@@ -1,0 +1,17 @@
+include blocks/header/nav-bar
+include blocks/footer/footer
+include blocks/registration-body/login-body
+
+doctype html
+html(lang='ru')
+    head
+        title Login
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        link(rel='stylesheet', href='css/styles.css')
+
+    body
+        +nav-bar()
+        +login-body()
+        +footer()

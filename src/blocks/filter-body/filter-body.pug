@@ -1,0 +1,43 @@
+include ../data-dropdown/data-dropdown
+include ../dropdown-guest-2/dropdown-guest-2
+include ../range-slider/range-slider
+include ../checkbox-buttons/checkbox-buttons
+include ../rich-checkbox-buttons/rich-checkbox-buttons
+include ../dropdown-room/dropdown-room
+include ../checkbox-list/checkbox-list
+include ../slider-room/slider-room
+include ../rangeSlider/rangeSlider
+
+mixin filter-body()
+
+    .filter-body
+        .filter-body__col-1
+            .filter-body__box-1
+                +data-dropdown("ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ")
+            .filter-body__box-2
+                +dropdown-guest-2("ГОСТИ", "1")
+            .filter-body__box-2
+                +rangeSlider("ДИАПАЗОН ЦЕНЫ")
+            .filter-body__box-2
+                +checkbox-buttons("CHECKBOX BUTTONS")
+            .filter-body__box-2
+                +rich-checkbox-buttons("ДОСТУПНОСТЬ")
+            .filter-body__box-2
+                +dropdown-room("УДОБСТВА НОМЕРА")
+            +checkbox-list("ДОПОЛНИТЕЛЬНЫЕ УДОБСТВА")
+
+        .filter-body__col-2
+            h1 Номера, которые мы для вас подобрали
+            +slider-room("888", "9 990", "145", "ЛЮКС")
+            +slider-room("840", "9 900", "65")
+            +slider-room("980", "8 500", "35", "ЛЮКС")
+            +slider-room("856", "7 300", "19")
+            +slider-room("740", "6 000", "44")
+            +slider-room("982", "5 800", "56")
+            +slider-room("678", "5 500", "45")
+            +slider-room("450", "5 300", "39")
+            +slider-room("350", "5 000", "77")
+            +slider-room("666", "5 000", "25")
+            +slider-room("444", "5 000", "15")
+            +slider-room("352", "5 000", "55")
+

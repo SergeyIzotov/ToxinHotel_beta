@@ -1,0 +1,5 @@
+mixin dropdown-guest(title, guestId)
+
+  .dropdown-guest
+    label(for=guestId)= title
+    input(id=guestId name="guest" type="text" readonly placeholder="Сколько гостей")

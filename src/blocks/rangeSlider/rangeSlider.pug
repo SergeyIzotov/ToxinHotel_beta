@@ -1,0 +1,8 @@
+mixin rangeSlider(label)
+
+    .rangeSlider
+        label(for="amount")= label
+        input(type="text" disabled id="amount" readonly)
+        #slider-range
+        //- script
+        //-     include ../../rangeSlider.js

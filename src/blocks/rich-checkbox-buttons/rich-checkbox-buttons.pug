@@ -1,0 +1,13 @@
+mixin rich-checkbox-buttons(title)
+
+  div.rich-checkbox-buttons__container
+    div.rich-checkbox-buttons__title= title
+    ul
+      li
+        input(type='checkbox' id='rcb1')
+        label(for='rcb1') Широкий коридор
+        span Ширина коридоров в номере не менее 91 см.
+      li
+        input(type='checkbox' id='rcb2')
+        label(for='rcb2') Помощник для инвалидов
+        span  На 1 этаже вас встретит специалист и проводит до номера.

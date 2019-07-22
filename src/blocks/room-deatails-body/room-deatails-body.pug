@@ -1,0 +1,42 @@
+include ../room-info/room-info
+include ../room-rating/room-rating
+include ../payment/payment
+include ../comment/comment
+include ../note/note
+include ../note/rules
+include ../pieChart/pieChart
+
+
+mixin room-deatails-body()
+
+    .room-deatails-body
+        .room-deatails-body__img
+            .room-deatails-body__img_col1
+                .room-deatails-body__img_1
+            .room-deatails-body__img_col2
+                .room-deatails-body__img_2
+                .room-deatails-body__img_3
+        .room-deatails-body__main
+            .room-deatails-body__main_col-1
+                .room-deatails-body__top
+                    .room-deatails-body__room-info
+                        +room-info()
+                    .room-deatails-body__room-rating_container
+                        .room-deatails-body__room-rating
+                            h2 Впечатления от номера
+                            +pieChart()
+                .room-deatails-body__comments
+                    .room-deatails-body__comments_header
+                        h2 Отзывы посетителей номера
+                        span 2 отзыва
+                    +comment("Мурад Сарафанов", "./img/avatar1.svg", "5 дней назад", "Великолепный " +
+                        "матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, " +
+                        "шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+                    +comment("Патрисия Стёклышкова", "./img/avatar2.svg", "Неделю назад", "Обслуживание на высоте! " +
+                        "Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо " +
+                        "и десерт как комплимент")
+                .room-deatails-body__note
+                    +rules
+                    +note
+            .room-deatails-body__main_col-2
+                +payment()

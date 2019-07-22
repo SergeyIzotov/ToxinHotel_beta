@@ -1,0 +1,14 @@
+include ../like-button/like
+
+mixin comment(name, avatar, relevance, text)
+
+  div.comment__container
+    div.comment-head
+      div.comment-head__img
+        img(src=avatar alt="ava")
+      div.comment-head__name= name
+      div.comment-head__relevance= relevance
+    div.comment-body
+      div.comment-body__like
+        +like(name)
+      div.comment-body__text= text

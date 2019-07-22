@@ -1,0 +1,32 @@
+include ../logo/logo
+include ../button-border/button-border
+include ../button-solid/button-solid
+
+mixin nav-bar()
+
+    .nav-bar__box
+        .nav-bar
+            .nav-bar__col1
+                a(href='#')
+                    +logo("index.html")
+            .nav-bar__col2
+                ul.nav-bar__menu
+                    li
+                        a(href='#') О нас
+                    li
+                        a(href='#') Услуги
+                        div
+                            i.material-icons expand_more
+                    li
+                        a(href='#') Вакансии
+                    li
+                        a(href='#') Новости
+                    li
+                        a(href='#') Соглашения
+                        div
+                            i.material-icons expand_more
+
+            .nav-bar__col3
+                +button-border("ВОЙТИ", "loginPage.html")
+                .nav-bar__col3_space
+                +button-solid("ЗАРЕГИСТРИРОВАТЬСЯ", "regPage.html")

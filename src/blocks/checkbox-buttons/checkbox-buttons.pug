@@ -1,0 +1,15 @@
+mixin checkbox-buttons(title)
+
+  div.checkbox-buttons__container
+    div.checkbox-buttons__title= title
+    ul
+      li
+        input(type='checkbox' id='cb1')
+        label(for='cb1') Можно курить
+      li
+        input(type='checkbox' id='cb2')
+        label(for='cb2') Можно с питомцами
+      li
+        input(type='checkbox' id='cb3')
+        label(for='cb3') Можно пригласить гостей
+        span  (до 10 человек)

@@ -1,0 +1,10 @@
+mixin drop-down-default(text1, text2, text3)
+
+  .drop-down-default
+    .drop-down-default--container
+      label(for='drop-down' class='default-text-field__label--style') dropdown
+      .drop-down-default--specification default
+    select(id='drop-down' name='drop-down' class='drop-down-default__input--style' placeholder='Сколько гостей')
+      option(value='')= text1
+      option(value='')= text2
+      option(value='')= text3

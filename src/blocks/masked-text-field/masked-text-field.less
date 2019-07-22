@@ -1,0 +1,23 @@
+.masked-text-field {
+  width: 320px;
+  font: @h3;
+
+  input {
+    width: 320px;
+    height: 44px;
+    border: 1px solid @DarkShade25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 0 2px 13px;
+    font: @text;
+    color: @DarkShade75;
+    margin-bottom: 8px;
+    &:focus {
+      outline: none;
+      border: 1px solid @DarkShade50;
+    }
+    &:hover {
+      border: 1px solid @DarkShade50;
+    }
+  }
+}
